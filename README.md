@@ -1,2 +1,5 @@
 # my-page
- A simple repo
+
+A simple home page with html css and javascript
+
+# Deploy on Akash
