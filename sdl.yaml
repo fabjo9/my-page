@@ -1,0 +1,31 @@
+---
+version: "2.0"
+services:
+  page:
+    image: fabjo9/my-page:latest
+    expose:
+      - port: 80
+        as: 80
+        to:
+          - global: true
+profiles:
+  compute:
+    page:
+      resources:
+        cpu:
+          units: 1
+        memory:
+          size: 2Gi
+        storage:
+          - size: 1Gi
+  placement:
+    dcloud:
+      pricing:
+        page:
+          denom: uakt
+          amount: 1000
+deployment:
+  page:
+    dcloud:
+      profile: page
+      count: 1 
