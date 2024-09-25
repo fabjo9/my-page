@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f2f3fb" />
+    <title>FabJo9</title>
+    <meta
+      name="description"
+      content="A one-page personal about me website built using HTML, CSS, and JavaScript."
+    />
+    <meta
+      name="keywords"
+      content="Personal portfolio"
+    />
+    <meta name="author" content="FabJo9" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/style/style.css" rel="stylesheet" />
+    <!-- Unpkg for card scroll reveal effect -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <!----Picture and name---->
+        <div class="picture">
+          <img
+            src="assets/1341.webp"
+            alt="FabJo9's photo"
+          />
+        </div>
+        <!--On loading name effect-->
+        <div class="name" translate="no">
+         <span><span>F</span></span><span><span>a</span></span><span><span>b</span></span><span><span>Jo</span></span><span><span>9</span></span>
+        </div>
+
+        <!----Few personal detail---->
+        <!--more details button-->
+        <div class="info-box">
+          About me
+          <div class="toggle" onclick="vibrate()">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <!--details-->
+          <div>
+            <br />
+            <div class="details">
+              <ul>
+                <li class="about">
+                  Hello, I’m FabJo9. I am a junior software developer, and web 3 enthusiast. I am interested in DePIN projects and decentralized cloud. 
+                  <br /><br />
+                  Please don't hesitate to connect with me.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!----All social media buttons---->
+        <div class="social-media">
+          <a href="https://x.com/FabJo96"
+            ><div><i class="fa-brands fa-x-twitter"></i>Twitter</div>
+          </a>
+          <a href="https://github.com/fabjo9">
+            <div><i class="fa-brands fa-github"></i>Github</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
